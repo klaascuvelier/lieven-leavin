@@ -1,0 +1,35 @@
+@mixin center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+ /**
+ picture:     1200x2290
+ screen dim:  994 / 1494:
+  */
+
+img {
+  @include center;
+  height: 100vh
+}
+
+section {
+  @include center;
+  width: calc(100vh / 2290px * 994px);
+  height: calc( 100vh / 2290px * 1494px);
+
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+  background: blue
+}
+
+nav {
+  flex: 0 0 12%;
+  background: red;
+}

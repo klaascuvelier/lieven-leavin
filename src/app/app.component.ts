@@ -6,7 +6,15 @@ import { NxWelcomeComponent } from './nx-welcome.component';
   standalone: true,
   imports: [NxWelcomeComponent, RouterModule],
   selector: 'lieven-leavin-root',
-  templateUrl: './app.component.html',
+  template: `
+    <img src="/assets/iphone.png" alt="" />
+    <section>
+      <main>
+        <router-outlet></router-outlet>
+      </main>
+      <nav></nav>
+    </section>
+  `,
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
