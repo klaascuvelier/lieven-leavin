@@ -15,7 +15,9 @@ import { Component } from '@angular/core';
         <img src="/assets/lieven.png" alt="Lieven" />
       </div>
     </header>
-    <section></section>
+    <section>
+      <img src="/assets/slack/lieven - sla.png" alt="lieven sla" />
+    </section>
   `,
 })
 export class SlackContainer {}
