@@ -6,6 +6,7 @@ import { NxWelcomeComponent } from './nx-welcome.component';
   standalone: true,
   imports: [NxWelcomeComponent, RouterModule],
   selector: 'lieven-leavin-root',
+  styleUrl: './app.component.scss',
   template: `
     <img src="/assets/iphone.png" alt="" />
     <section>
@@ -16,11 +17,7 @@ import { NxWelcomeComponent } from './nx-welcome.component';
       <main>
         <router-outlet></router-outlet>
       </main>
-      <nav></nav>
     </section>
   `,
-  styleUrl: './app.component.scss',
 })
-export class AppComponent {
-  title = 'lieven-leavin';
-}
+export class AppComponent {}
