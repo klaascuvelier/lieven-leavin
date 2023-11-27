@@ -13,6 +13,7 @@
 img {
   @include center;
   height: 100vh;
+  z-index: 0;
 }
 
 section {
@@ -25,6 +26,8 @@ section {
 
   background: black url('/assets/wallpaper.png') no-repeat center center;
   background-size: cover;
+
+  z-index: 1;
 }
 
 header {
@@ -43,4 +46,17 @@ header {
 
 main {
   flex: 1 0 auto;
+}
+
+.homebutton {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  bottom: 5%;
+  display: block;
+  width: 10vh;
+  height: 10vh;
+  border-radius: 100%;
+  cursor: pointer;
+  z-index: 1;
 }

@@ -18,6 +18,7 @@ import { NxWelcomeComponent } from './nx-welcome.component';
         <router-outlet></router-outlet>
       </main>
     </section>
+    <a class="homebutton" routerLink="/"></a>
   `,
 })
 export class AppComponent {}
