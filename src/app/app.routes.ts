@@ -18,5 +18,11 @@ export const appRoutes: Route[] = [
     loadComponent: () =>
       import('./slack/slack.container').then((m) => m.SlackContainer),
   },
+
+  {
+    path: 'mail',
+    loadComponent: () =>
+      import('./mail/mail.container').then((m) => m.MailContainer),
+  },
   { path: '**', redirectTo: 'home' },
 ];
