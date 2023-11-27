@@ -1,0 +1,26 @@
+.list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  background: #fefefe;
+  padding: 1vh 1vh;
+  margin: 0;
+  list-style-type: none;
+  overflow: auto;
+  gap: 1vh;
+}
+
+li {
+  width: calc((100% - 3vh) / 4);
+
+  a {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    background: #ffffff 0 0 no-repeat padding-box;
+    background-size: cover;
+  }
+}
