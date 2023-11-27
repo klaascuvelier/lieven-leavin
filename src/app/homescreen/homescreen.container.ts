@@ -14,6 +14,11 @@ import { ApplicationComponent } from '../application/application.component';
         [route]="['/', 'photos']"
         icon="/assets/photos.png"
       ></ll-application>
+      <ll-application
+        name="Showpad"
+        [route]="['/', 'showpad']"
+        icon="/assets/showpad.png"
+      ></ll-application>
     </div>
 
     <nav>

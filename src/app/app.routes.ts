@@ -14,11 +14,20 @@ export const appRoutes: Route[] = [
       import('./photos/photos.container').then((m) => m.PhotosContainer),
   },
   {
+    path: 'showpad',
+    children: [],
+    canActivate: [
+      () => {
+        window.location.href = 'showpad://';
+        return false;
+      },
+    ],
+  },
+  {
     path: 'slack',
     loadComponent: () =>
       import('./slack/slack.container').then((m) => m.SlackContainer),
   },
-
   {
     path: 'mail',
     loadComponent: () =>
