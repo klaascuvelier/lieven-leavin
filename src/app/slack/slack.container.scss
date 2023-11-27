@@ -1,0 +1,45 @@
+:host {
+  display: flex;
+  flex-direction: column;
+
+  height: 100%;
+  width: 100%;
+  background: #fefefe;
+}
+
+header {
+  flex: 0 0 60px;
+  padding: 10px 10px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  background: rgb(32, 66, 130);
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.company {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+
+  img {
+    height: 32px;
+    margin-right: 10px;
+  }
+}
+
+.user {
+  img {
+    height: 32px;
+    border-raiuds: 10px;
+  }
+}
+
+section {
+  flex: 1 1 auto;
+  overflow: auto;
+}
