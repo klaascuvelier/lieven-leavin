@@ -12,16 +12,16 @@ import { ApplicationComponent } from '../application/application.component';
       <ll-application
         name="Photos"
         [route]="['/', 'photos']"
-        icon="/assets/photos.png"
+        icon="/assets/icons/photos.png"
       ></ll-application>
       <ll-application
         name="Showpad"
         [route]="['/', 'showpad']"
-        icon="/assets/showpad.png"
+        icon="/assets/icons/showpad.png"
       ></ll-application>
 
       <ll-application
-        icon="/assets/slack.png"
+        icon="/assets/icons/slack.png"
         name="Slack"
         [route]="['/', 'slack']"
       ></ll-application>
@@ -29,11 +29,12 @@ import { ApplicationComponent } from '../application/application.component';
 
     <nav>
       <ll-application
-        icon="/assets/safari.png"
+        icon="/assets/icons/safari.png"
         [route]="['/', 'safari']"
       ></ll-application>
+
       <ll-application
-        icon="/assets/mail.png"
+        icon="/assets/icons/mail.png"
         [route]="['/', 'mail']"
       ></ll-application>
     </nav>
