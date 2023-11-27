@@ -24,7 +24,7 @@ section {
   display: flex;
   flex-direction: column;
 
-  background: black url('/assets/wallpaper.png') no-repeat center center;
+  background: #fff url('/assets/wallpaper.png') no-repeat center center;
   background-size: cover;
 
   z-index: 1;
@@ -42,6 +42,8 @@ header {
   background: #000000;
   color: #ffffff;
   font-size: 12px;
+
+  cursor: default;
 }
 
 main {
