@@ -19,14 +19,19 @@ import { ApplicationComponent } from '../application/application.component';
         [route]="['/', 'showpad']"
         icon="/assets/showpad.png"
       ></ll-application>
+
+      <ll-application
+        icon="/assets/slack.png"
+        name="Slack"
+        [route]="['/', 'slack']"
+      ></ll-application>
     </div>
 
     <nav>
       <ll-application
-        icon="/assets/slack.png"
-        [route]="['/', 'slack']"
+        icon="/assets/safari.png"
+        [route]="['/', 'safari']"
       ></ll-application>
-
       <ll-application
         icon="/assets/mail.png"
         [route]="['/', 'mail']"

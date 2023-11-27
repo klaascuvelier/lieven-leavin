@@ -29,6 +29,11 @@ export const appRoutes: Route[] = [
       import('./slack/slack.container').then((m) => m.SlackContainer),
   },
   {
+    path: 'safari',
+    loadComponent: () =>
+      import('./safari/safari.container').then((m) => m.SafariContainer),
+  },
+  {
     path: 'mail',
     loadComponent: () =>
       import('./mail/mail.container').then((m) => m.MailContainer),
