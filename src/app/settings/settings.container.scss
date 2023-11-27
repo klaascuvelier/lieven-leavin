@@ -1,11 +1,10 @@
 :host {
-  display: flex;
+  display: block;
   padding: 50px 25px 25px;
-  flex-direction: column;
-  overflow: auto;
   background: #fefefe;
   height: 100%;
   width: 100%;
+  overflow: auto;
 }
 
 h1 {
