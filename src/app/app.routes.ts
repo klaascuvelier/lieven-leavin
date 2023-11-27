@@ -71,5 +71,14 @@ export const appRoutes: Route[] = [
       statusBar: { background: '#fefefe', color: '#000' },
     },
   },
+
+  {
+    path: 'settings',
+    loadComponent: () =>
+      import('./settings/settings.container').then((m) => m.SettingsContainer),
+    data: {
+      statusBar: { background: '#fefefe', color: '#000' },
+    },
+  },
   { path: '**', redirectTo: 'home' },
 ];

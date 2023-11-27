@@ -37,6 +37,11 @@ import { ApplicationComponent } from '../application/application.component';
         icon="/assets/icons/mail.png"
         [route]="['/', 'mail']"
       ></ll-application>
+
+      <ll-application
+        icon="/assets/icons/settings.png"
+        [route]="['/', 'settings']"
+      ></ll-application>
     </nav>
   `,
 })
