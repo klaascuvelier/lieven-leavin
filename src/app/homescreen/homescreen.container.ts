@@ -16,7 +16,7 @@ import { ApplicationComponent } from '../application/application.component';
       ></ll-application>
       <ll-application
         name="Showpad"
-        [route]="['/', 'showpad']"
+        [route]="['/', 'statistics']"
         icon="/assets/icons/showpad.png"
       ></ll-application>
 

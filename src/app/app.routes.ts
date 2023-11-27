@@ -38,21 +38,21 @@ export const appRoutes: Route[] = [
     ],
   },
   {
-    path: 'showpad',
-    children: [],
-    canActivate: [
-      () => {
-        window.location.href = 'showpad://';
-        return false;
-      },
-    ],
-  },
-  {
     path: 'slack',
     loadComponent: () =>
       import('./slack/slack.container').then((m) => m.SlackContainer),
     data: {
       statusBar: { background: '#000', color: '#fff' },
+    },
+  },
+  {
+    path: 'statistics',
+    loadComponent: () =>
+      import('./statistics/statistics.component').then(
+        (m) => m.StatisticsComponent,
+      ),
+    data: {
+      statusBar: { background: '#fefefe', color: '#000' },
     },
   },
   {
