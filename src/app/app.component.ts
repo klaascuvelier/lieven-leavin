@@ -9,6 +9,10 @@ import { NxWelcomeComponent } from './nx-welcome.component';
   template: `
     <img src="/assets/iphone.png" alt="" />
     <section>
+      <header>
+        <div>Showpad</div>
+        <div>9:41</div>
+      </header>
       <main>
         <router-outlet></router-outlet>
       </main>
