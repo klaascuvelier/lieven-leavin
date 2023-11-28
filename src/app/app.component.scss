@@ -56,6 +56,18 @@ main {
   width: 10vh;
   height: 10vh;
   border-radius: 100%;
+  background: transparent;
+  border: none;
   cursor: pointer;
   z-index: 1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: pink;
+  z-index: 5;
 }

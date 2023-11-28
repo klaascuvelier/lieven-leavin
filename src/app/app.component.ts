@@ -24,9 +24,22 @@ import { toSignal } from '@angular/core/rxjs-interop';
       </header>
       <main>
         <router-outlet></router-outlet>
+        @if (specialTrick) {
+          <div class="overlay">
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/-bzWSJG93P8?autoplay=1"
+              title=""
+              frameBorder="0"
+              allowFullScreen
+              au
+            ></iframe>
+          </div>
+        }
       </main>
     </section>
-    <a class="homebutton" routerLink="/"></a>
+    <button class="homebutton" (click)="onHomebuttonClick()"></button>
   `,
 })
 export class AppComponent {
@@ -47,5 +60,41 @@ export class AppComponent {
       };
     }),
   );
+  private clickCounter = 0;
+  private clickTimer: number | undefined;
   protected statusBar = toSignal(this.statusBar$);
+  protected specialTrick = false;
+
+  constructor() {
+    this.router.events
+      .pipe(filter((evt) => evt instanceof NavigationEnd))
+      .subscribe(() => {
+        // always clear timer on nav
+        if (this.clickTimer) {
+          window.clearTimeout(this.clickTimer);
+        }
+      });
+  }
+
+  protected onHomebuttonClick() {
+    if (this.specialTrick) {
+      return;
+    }
+
+    if (this.clickTimer) {
+      window.clearTimeout(this.clickTimer);
+    }
+
+    this.clickCounter++;
+
+    if (this.clickCounter === 3) {
+      this.specialTrick = true;
+      return;
+    }
+
+    this.clickTimer = window.setTimeout(() => {
+      this.clickCounter = 0;
+      this.router.navigate(['/']);
+    }, 300);
+  }
 }
