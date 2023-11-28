@@ -4,7 +4,7 @@ Saying goodbye to Lieven in an appropriate way; we created him a web-app with a 
 
 ## Thank you
 
-**Thank youand goodbye from the full Showpad PNT team!**
+**Thank you and goodbye from the full Showpad PNT team!**
 
 Adam Kufel, Adam Roszyk, Adam Taciak, Aditya Jain, Agnieszka Janiec,
 Alexander Starosolsky, Ana de la Borbolla, Anton Marker, Aren Maes,
