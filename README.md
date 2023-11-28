@@ -60,3 +60,6 @@ Contributors of the app
 - Pierre Clotuche
 - Mohamed Abida
 - Klaas Cuvelier
+
+Cameo
+- Guus De Graeve
