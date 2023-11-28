@@ -2,10 +2,10 @@ import { Component } from '@angular/core';
 import { CrashComponent } from './crash.component';
 
 @Component({
-  selector: 'll-statistics',
+  selector: 'll-showpad',
   standalone: true,
-  styleUrl: './statistics.component.scss',
+  styleUrl: './showpad.container.scss',
   template: `<ll-crash />`,
   imports: [CrashComponent],
 })
-export class StatisticsComponent {}
+export class ShowpadContainer {}

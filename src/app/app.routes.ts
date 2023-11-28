@@ -46,11 +46,9 @@ export const appRoutes: Route[] = [
     },
   },
   {
-    path: 'statistics',
+    path: 'showpad',
     loadComponent: () =>
-      import('./statistics/statistics.component').then(
-        (m) => m.StatisticsComponent,
-      ),
+      import('./showpad/showpad.container').then((m) => m.ShowpadContainer),
     data: {
       statusBar: { background: '#fefefe', color: '#000' },
     },
