@@ -12,21 +12,21 @@ import { ApplicationComponent } from '../application/application.component';
       <ll-application
         name="Photos"
         [route]="['/', 'photos']"
-        icon="/assets/icons/photos.png"
+        icon="./assets/icons/photos.png"
       ></ll-application>
       <ll-application
         name="Youtube"
         [route]="['/', 'youtube']"
-        icon="/assets/icons/youtube.png"
+        icon="./assets/icons/youtube.png"
       ></ll-application>
       <ll-application
         name="Showpad"
         [route]="['/', 'showpad']"
-        icon="/assets/icons/showpad.png"
+        icon="./assets/icons/showpad.png"
       ></ll-application>
 
       <ll-application
-        icon="/assets/icons/slack.png"
+        icon="./assets/icons/slack.png"
         name="Slack"
         [route]="['/', 'slack']"
       ></ll-application>
@@ -34,22 +34,22 @@ import { ApplicationComponent } from '../application/application.component';
 
     <nav>
       <ll-application
-        icon="/assets/icons/safari.png"
+        icon="./assets/icons/safari.png"
         [route]="['/', 'safari']"
       ></ll-application>
 
       <ll-application
-        icon="/assets/icons/mail.png"
+        icon="./assets/icons/mail.png"
         [route]="['/', 'mail']"
       ></ll-application>
 
       <ll-application
-        icon="/assets/icons/settings.png"
+        icon="./assets/icons/settings.png"
         [route]="['/', 'settings']"
       ></ll-application>
 
       <ll-application
-        icon="/assets/icons/notes.png"
+        icon="./assets/icons/notes.png"
         [route]="['/', 'notes']"
       ></ll-application>
     </nav>

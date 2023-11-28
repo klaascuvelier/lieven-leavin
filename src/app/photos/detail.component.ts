@@ -36,7 +36,7 @@ export class PhotoDetailComponent {
 
   protected photoId = toSignal(this.photoId$);
   protected photoUrl = computed(() => {
-    return `/assets/photos/image-${(this.photoId() ?? 0) + 1}.jpg`;
+    return `./assets/photos/image-${(this.photoId() ?? 0) + 1}.jpg`;
   });
 
   constructor() {

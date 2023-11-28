@@ -16,8 +16,8 @@ import { toSignal } from '@angular/core/rxjs-interop';
   selector: 'lieven-leavin-root',
   styleUrl: './app.component.scss',
   template: `
-    <img src="/assets/iphone.png" alt="" />
-    <section>
+    <img src="./assets/iphone.png" alt="" />
+    <section style="background-image: url('./assets/wallpaper.jpg')">
       <header [ngStyle]="statusBar()">
         <div>Showpad</div>
         <div>9:41</div>

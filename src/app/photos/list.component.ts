@@ -25,7 +25,7 @@ export class PhotoListComponent {
     .map((value, index) => {
       return {
         id: index,
-        url: `/assets/photos/image-${index + 1}.jpg`,
+        url: `./assets/photos/image-${index + 1}.jpg`,
       };
     });
 }

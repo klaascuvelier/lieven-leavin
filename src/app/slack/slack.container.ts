@@ -7,16 +7,16 @@ import { Component } from '@angular/core';
   template: `
     <header>
       <div class="company">
-        <img src="/assets/showpad.svg" alt="Showpad" />
+        <img src="./assets/showpad.svg" alt="Showpad" />
         Showpad
       </div>
 
       <div class="user">
-        <img src="/assets/lieven.png" alt="Lieven" />
+        <img src="./assets/lieven.png" alt="Lieven" />
       </div>
     </header>
     <section>
-      <img src="/assets/slack/lieven - sla.png" alt="lieven sla" />
+      <img src="./assets/slack/lieven - sla.png" alt="lieven sla" />
     </section>
   `,
 })
