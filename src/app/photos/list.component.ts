@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { pictureCount } from './constants';
 
 @Component({
   selector: 'll-photo-list',
@@ -19,7 +20,7 @@ import { RouterLink } from '@angular/router';
   </ol>`,
 })
 export class PhotoListComponent {
-  protected photos = Array(28)
+  protected photos = Array(pictureCount)
     .fill(null)
     .map((value, index) => {
       return {
