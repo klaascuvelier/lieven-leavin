@@ -19,7 +19,7 @@
   flex-direction: column;
   font-weight: 300;
 
-  button {
+  a {
     margin-top: 25px;
     padding: 10px;
     width: 100%;
@@ -32,6 +32,8 @@
       rgb(197, 204, 223) 100%
     );
     color: white;
+    text-decoration: none;
+    cursor: pointer;
   }
 }
 

@@ -1,11 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import { delay, of, startWith } from 'rxjs';
 
 @Component({
   selector: 'll-crash',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterLink],
   template: `
     <div class="container">
       <div class="spinner">
@@ -28,7 +29,7 @@ import { delay, of, startWith } from 'rxjs';
             <h3>"Showpad" has crashed</h3>
             Please close the app and try again
           </div>
-          <button>Close</button>
+          <a routerLink="../">Close</a>
         </div>
       }
     </div>
