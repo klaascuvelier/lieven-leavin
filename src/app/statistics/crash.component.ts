@@ -36,5 +36,5 @@ import { delay, of, startWith } from 'rxjs';
   styleUrl: './crash.component.scss',
 })
 export class CrashComponent {
-  showError$ = of(true).pipe(delay(7000), startWith(false));
+  showError$ = of(true).pipe(delay(4500), startWith(false));
 }
