@@ -38,6 +38,14 @@ export const appRoutes: Route[] = [
     ],
   },
   {
+    path: 'youtube',
+    loadComponent: () =>
+      import('./youtube/youtube.container').then((m) => m.YoutubeContainer),
+    data: {
+      statusBar: { background: '#000', color: '#fff' },
+    },
+  },
+  {
     path: 'slack',
     loadComponent: () =>
       import('./slack/slack.container').then((m) => m.SlackContainer),

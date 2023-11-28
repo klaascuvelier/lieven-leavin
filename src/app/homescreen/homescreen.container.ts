@@ -15,6 +15,11 @@ import { ApplicationComponent } from '../application/application.component';
         icon="/assets/icons/photos.png"
       ></ll-application>
       <ll-application
+        name="Youtube"
+        [route]="['/', 'youtube']"
+        icon="/assets/icons/youtube.png"
+      ></ll-application>
+      <ll-application
         name="Showpad"
         [route]="['/', 'showpad']"
         icon="/assets/icons/showpad.png"
