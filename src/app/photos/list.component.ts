@@ -19,7 +19,7 @@ import { RouterLink } from '@angular/router';
   </ol>`,
 })
 export class PhotoListComponent {
-  protected photos = Array(27)
+  protected photos = Array(28)
     .fill(null)
     .map((value, index) => {
       return {
