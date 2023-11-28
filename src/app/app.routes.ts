@@ -80,5 +80,13 @@ export const appRoutes: Route[] = [
       statusBar: { background: '#fefefe', color: '#000' },
     },
   },
+  {
+    path: 'notes',
+    loadComponent: () =>
+      import('./notes/notes.container').then((m) => m.NotesComponent),
+    data: {
+      statusBar: { background: '#fefefe', color: '#000' },
+    },
+  },
   { path: '**', redirectTo: 'home' },
 ];

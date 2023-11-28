@@ -42,6 +42,11 @@ import { ApplicationComponent } from '../application/application.component';
         icon="/assets/icons/settings.png"
         [route]="['/', 'settings']"
       ></ll-application>
+
+      <ll-application
+        icon="/assets/icons/notes.png"
+        [route]="['/', 'notes']"
+      ></ll-application>
     </nav>
   `,
 })

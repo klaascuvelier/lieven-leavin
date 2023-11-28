@@ -1,0 +1,30 @@
+.notes-container {
+  height: 100%;
+  width: 100%;
+  background: url('../../assets/notes-line.png') repeat-y;
+  line-height: 40px;
+}
+
+.body {
+  font-family: 'Boogaloo';
+  line-height: 50px;
+  margin: 0 60px;
+  padding-top: 60px;
+  p {
+    font-size: 20px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+  p,
+  h1 {
+    margin: 0;
+  }
+  span {
+    text-decoration: underline;
+  }
+  .indent {
+    padding-left: 20px;
+  }
+}
