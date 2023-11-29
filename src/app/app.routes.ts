@@ -28,7 +28,7 @@ export const appRoutes: Route[] = [
             (m) => m.PhotoDetailComponent,
           ),
         data: {
-          statusBar: { background: '#fefefe', color: '#000' },
+          statusBar: { background: '#f8f8f8', color: '#000' },
         },
       },
       {
@@ -58,7 +58,7 @@ export const appRoutes: Route[] = [
     loadComponent: () =>
       import('./showpad/showpad.container').then((m) => m.ShowpadContainer),
     data: {
-      statusBar: { background: '#fefefe', color: '#000' },
+      statusBar: { background: '#f8f8f8', color: '#000' },
     },
   },
   {
@@ -74,7 +74,7 @@ export const appRoutes: Route[] = [
     loadComponent: () =>
       import('./mail/mail.container').then((m) => m.MailContainer),
     data: {
-      statusBar: { background: '#fefefe', color: '#000' },
+      statusBar: { background: '#f8f8f8', color: '#000' },
     },
   },
 
@@ -82,8 +82,41 @@ export const appRoutes: Route[] = [
     path: 'settings',
     loadComponent: () =>
       import('./settings/settings.container').then((m) => m.SettingsContainer),
+    children: [
+      {
+        path: 'general',
+        loadComponent: () =>
+          import('./settings/general/general.container').then(
+            (m) => m.GeneralContainer,
+          ),
+        data: { statusBar: { background: '#f8f8f8', color: '#000' } },
+      },
+      {
+        path: 'profile',
+        loadComponent: () =>
+          import('./settings/profile/profile.container').then(
+            (m) => m.ProfileContainer,
+          ),
+        data: { statusBar: { background: '#f8f8f8', color: '#000' } },
+      },
+      {
+        path: 'about',
+        loadComponent: () =>
+          import('./settings/about/about.container').then(
+            (m) => m.AboutContainer,
+          ),
+        data: { statusBar: { background: '#f8f8f8', color: '#000' } },
+      },
+      {
+        path: 'data',
+        loadComponent: () =>
+          import('./settings/data/data.container').then((m) => m.DataContainer),
+        data: { statusBar: { background: '#f8f8f8', color: '#000' } },
+      },
+      { path: '**', redirectTo: 'general' },
+    ],
     data: {
-      statusBar: { background: '#fefefe', color: '#000' },
+      statusBar: { background: '#f8f8f8', color: '#000' },
     },
   },
   {
@@ -91,7 +124,7 @@ export const appRoutes: Route[] = [
     loadComponent: () =>
       import('./notes/notes.container').then((m) => m.NotesComponent),
     data: {
-      statusBar: { background: '#fefefe', color: '#000' },
+      statusBar: { background: '#f8f8f8', color: '#000' },
     },
   },
   { path: '**', redirectTo: 'home' },

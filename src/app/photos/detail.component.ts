@@ -8,6 +8,7 @@ import {
 import { toSignal } from '@angular/core/rxjs-interop';
 import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { map } from 'rxjs';
+import { ViewComponent } from '../view/view.component';
 import { pictureCount } from './constants';
 
 @Component({
@@ -15,17 +16,15 @@ import { pictureCount } from './constants';
   standalone: true,
   styleUrl: './detail.component.scss',
   template: `
-    <div class="nav">
-      <a [routerLink]="['/photos']">🔙</a>
-    </div>
-
-    @if (photoUrl()) {
-      <div class="photo">
-        <img [attr.src]="photoUrl()" alt="photo of lieven" />
-      </div>
-    }
+    <ll-view url="/photos">
+      @if (photoUrl()) {
+        <div class="photo">
+          <img [attr.src]="photoUrl()" alt="photo of lieven" />
+        </div>
+      }
+    </ll-view>
   `,
-  imports: [RouterLink],
+  imports: [RouterLink, ViewComponent],
 })
 export class PhotoDetailComponent {
   private router = inject(Router);
