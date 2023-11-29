@@ -138,7 +138,15 @@ export const appRoutes: Route[] = [
         },
       },
       {
-        path: 'settings-cell',
+        path: 'profile',
+        loadComponent: () =>
+          import('./settings/profile/profile.container').then(
+            (m) => m.ProfileContainer,
+          ),
+        data: { statusBar: { background: '#f8f8f8', color: '#000' } },
+      },
+      {
+        path: 'cell',
         loadComponent: () =>
           import('./setting-cell/setting-cell.component').then(
             (m) => m.SettingCellComponent,
@@ -148,7 +156,7 @@ export const appRoutes: Route[] = [
         },
       },
       {
-        path: 'settings-general',
+        path: 'general',
         loadComponent: () =>
           import('./setting-general/setting-general.component').then(
             (m) => m.SettingGeneralComponent,

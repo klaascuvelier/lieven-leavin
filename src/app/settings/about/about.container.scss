@@ -16,3 +16,16 @@ div {
 section:not(:last-child) {
   margin-bottom: 50px;
 }
+
+.item {
+  z-index: 1;
+  text-decoration: none;
+  color: black;
+  margin-top: 15px;
+  background-color: white;
+  padding: 8px;
+  width: 100%;
+  display: flex;
+  border-radius: 10px;
+  border: 1px solid #8d9eba;
+}
