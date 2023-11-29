@@ -77,11 +77,12 @@ export const appRoutes: Route[] = [
       statusBar: { background: '#f8f8f8', color: '#000' },
     },
   },
-
   {
-    path: 'settings',
+    path: 'settings-klaas',
     loadComponent: () =>
-      import('./settings/settings.container').then((m) => m.SettingsContainer),
+      import('./settings/settings.container-klaas').then(
+        (m) => m.SettingsContainer,
+      ),
     children: [
       {
         path: 'general',
@@ -118,6 +119,45 @@ export const appRoutes: Route[] = [
     data: {
       statusBar: { background: '#f8f8f8', color: '#000' },
     },
+  },
+  {
+    path: 'settings',
+    loadComponent: () =>
+      import('./setting-base/setting-base.component').then(
+        (m) => m.SettingBaseComponent,
+      ),
+    children: [
+      {
+        path: '',
+        loadComponent: () =>
+          import('./settings/settings.container').then(
+            (m) => m.SettingsContainer,
+          ),
+        data: {
+          statusBar: { background: '#fefefe', color: '#000' },
+        },
+      },
+      {
+        path: 'settings-cell',
+        loadComponent: () =>
+          import('./setting-cell/setting-cell.component').then(
+            (m) => m.SettingCellComponent,
+          ),
+        data: {
+          statusBar: { background: '#fefefe', color: '#000' },
+        },
+      },
+      {
+        path: 'settings-general',
+        loadComponent: () =>
+          import('./setting-general/setting-general.component').then(
+            (m) => m.SettingGeneralComponent,
+          ),
+        data: {
+          statusBar: { background: '#fefefe', color: '#000' },
+        },
+      },
+    ],
   },
   {
     path: 'notes',
