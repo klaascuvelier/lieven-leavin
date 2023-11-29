@@ -8,7 +8,7 @@ import { RouterLink } from '@angular/router';
   imports: [RouterLink],
   template: `
     <section>
-      <a class="settings-item">
+      <a class="settings-item" routerLink="/settings/cell">
         <img class="settings-item__icon" src="/assets/icons/cell-setting.png" />
         <span class="settings-item__text">Cellular</span>
         <span class="settings-item__cheveron">

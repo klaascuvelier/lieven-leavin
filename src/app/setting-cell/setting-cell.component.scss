@@ -1,0 +1,48 @@
+.settings-item {
+  & + & {
+    margin-top: 15px;
+  }
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  padding: 8px;
+  width: 100%;
+  display: flex;
+  border-radius: 10px;
+  border: 1px solid #8d9eba;
+  &__text {
+    flex: auto;
+    margin-left: 10px;
+    font-weight: bold;
+  }
+  &__icon,
+  &__cheveron {
+    flex: none;
+  }
+  &__text,
+  &__cheveron {
+    display: flex;
+    align-items: center;
+  }
+  &__icon {
+    height: 25px;
+    width: 25px;
+  }
+  &__cheveron {
+    height: 25px;
+    img {
+      height: 15px;
+      width: 15px;
+    }
+  }
+  &__sub-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.8;
+  }
+}
+
+h3 {
+  margin: 0 0 15px 0;
+}

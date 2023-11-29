@@ -22,7 +22,9 @@ import { filter, map, startWith } from 'rxjs';
       }
       <h3>Settings</h3>
     </nav>
-    <router-outlet></router-outlet>`,
+    <div class="content">
+      <router-outlet></router-outlet>
+    </div>`,
   styleUrl: './setting-base.component.scss',
 })
 export class SettingBaseComponent {
