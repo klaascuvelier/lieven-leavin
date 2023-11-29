@@ -9,27 +9,30 @@ import { RouterLink } from '@angular/router';
   template: `
     <section>
       <a class="settings-item" routerLink="/settings/cell">
-        <img class="settings-item__icon" src="/assets/icons/cell-setting.png" />
+        <img
+          class="settings-item__icon"
+          src="./assets/icons/cell-setting.png"
+        />
         <span class="settings-item__text">Cellular</span>
         <span class="settings-item__cheveron">
-          <img src="/assets/chevron-right.svg" />
+          <img src="./assets/chevron-right.svg" />
         </span>
       </a>
       <a class="settings-item" routerLink="/settings/general">
-        <img class="settings-item__icon" src="/assets/icons/settings.png" />
+        <img class="settings-item__icon" src="./assets/icons/settings.png" />
         <span class="settings-item__text">General</span>
         <span class="settings-item__cheveron">
-          <img src="/assets/chevron-right.svg" />
+          <img src="./assets/chevron-right.svg" />
         </span>
       </a>
       <a class="settings-item" routerLink="/settings/profile">
         <img
           class="settings-item__icon"
-          src="/assets/icons/settings-info.png"
+          src="./assets/icons/settings-info.png"
         />
         <span class="settings-item__text">About</span>
         <span class="settings-item__cheveron">
-          <img src="/assets/chevron-right.svg" />
+          <img src="./assets/chevron-right.svg" />
         </span>
       </a>
     </section>

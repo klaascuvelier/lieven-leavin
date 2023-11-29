@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
   template: `
     <h3>Cellular Usage</h3>
     <div class="settings-item">
-      <img class="settings-item__icon" src="/assets/icons/showpad.png" />
+      <img class="settings-item__icon" src="./assets/icons/showpad.png" />
       <span class="settings-item__text">Showpad</span>
       <span class="settings-item__sub-text">612 GB</span>
     </div>

@@ -78,49 +78,6 @@ export const appRoutes: Route[] = [
     },
   },
   {
-    path: 'settings-klaas',
-    loadComponent: () =>
-      import('./settings/settings.container-klaas').then(
-        (m) => m.SettingsContainer,
-      ),
-    children: [
-      {
-        path: 'general',
-        loadComponent: () =>
-          import('./settings/general/general.container').then(
-            (m) => m.GeneralContainer,
-          ),
-        data: { statusBar: { background: '#f8f8f8', color: '#000' } },
-      },
-      {
-        path: 'profile',
-        loadComponent: () =>
-          import('./settings/profile/profile.container').then(
-            (m) => m.ProfileContainer,
-          ),
-        data: { statusBar: { background: '#f8f8f8', color: '#000' } },
-      },
-      {
-        path: 'about',
-        loadComponent: () =>
-          import('./settings/about/about.container').then(
-            (m) => m.AboutContainer,
-          ),
-        data: { statusBar: { background: '#f8f8f8', color: '#000' } },
-      },
-      {
-        path: 'data',
-        loadComponent: () =>
-          import('./settings/data/data.container').then((m) => m.DataContainer),
-        data: { statusBar: { background: '#f8f8f8', color: '#000' } },
-      },
-      { path: '**', redirectTo: 'general' },
-    ],
-    data: {
-      statusBar: { background: '#f8f8f8', color: '#000' },
-    },
-  },
-  {
     path: 'settings',
     loadComponent: () =>
       import('./setting-base/setting-base.component').then(

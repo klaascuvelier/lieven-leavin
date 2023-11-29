@@ -7,7 +7,7 @@ import { ViewComponent } from '../../view/view.component';
   styleUrl: './profile.container.scss',
   template: `
     <div class="content">
-      <img src="/assets/lieven.png" />
+      <img src="./assets/lieven.png" />
       <div class="name">Lieven Dekeyser</div>
       <div class="title">Chief Grumpy Officer - iOS</div>
       <a href="mailto:lieven@planetreesoftware.com" class="contact"
@@ -15,6 +15,5 @@ import { ViewComponent } from '../../view/view.component';
       >
     </div>
   `,
-  imports: [ViewComponent],
 })
 export class ProfileContainer {}
