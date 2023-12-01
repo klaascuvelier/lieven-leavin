@@ -11,7 +11,12 @@ import { Component } from '@angular/core';
         <div class="badge unread"></div>
         <div class="title">Team Showpad sent you a GroupGreeting eCard!</div>
         <div class="excerpt">
-          Hi Lieven, Team Showpad sent you a card. <a href="">View your card</a>
+          Hi Lieven, Team Showpad sent you a card.
+          <a
+            href="https://www.groupgreeting.com/card/b788d123083ba87/delivered"
+            target="_blank"
+            >View your card</a
+          >
         </div>
       </li>
 
